@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+data/*.db
+data/*.db-*
+eval/results/
+*.log
+.DS_Store
+.claude/
+
+# private planning, kept on this machine only
+CLAUDE.local.md
+docs/ROADMAP.md
+docs/adr/0005-*.md

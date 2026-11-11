@@ -1,0 +1,3592 @@
+{
+ "id": "crm-recheck",
+ "question": "On Monday we shortlisted 5 CRM tools for a 20-person sales team. Has any of them changed pricing or shipped something big since?",
+ "recordedAt": "2026-11-11T10:32:36.995Z",
+ "provider": "groq",
+ "models": {
+  "fast": "openai/gpt-oss-20b",
+  "answer": "openai/gpt-oss-120b"
+ },
+ "events": [
+  [
+   38,
+   {
+    "type": "step",
+    "id": "plan",
+    "label": "Understanding the question",
+    "status": "running"
+   }
+  ],
+  [
+   464,
+   {
+    "type": "step",
+    "id": "plan",
+    "label": "Plan: recheck",
+    "status": "done"
+   }
+  ],
+  [
+   464,
+   {
+    "type": "plan",
+    "tier": "recheck",
+    "topics": [
+     "CRM tools pricing changes",
+     "CRM tools new features"
+    ]
+   }
+  ],
+  [
+   476,
+   {
+    "type": "step",
+    "id": "memory",
+    "label": "Digging through memory",
+    "status": "running"
+   }
+  ],
+  [
+   476,
+   {
+    "type": "step",
+    "id": "memory",
+    "label": "Dug up 8 memories",
+    "status": "done"
+   }
+  ],
+  [
+   476,
+   {
+    "type": "memory",
+    "turns": [
+     {
+      "at": "2026-11-09T05:30:00.000Z",
+      "role": "user",
+      "text": "We need a CRM for a 20-person sales team. Shortlist 5 options with pricing."
+     },
+     {
+      "at": "2026-11-09T05:30:08.000Z",
+      "role": "assistant",
+      "text": "Shortlist: HubSpot Sales Hub Starter $20/seat/month [1], Pipedrive Essential $14/seat/month [2], Zoho CRM Standard $14/user/month [3], Salesforce Starter Suite $25/user/month [4], Freshsales Growth $9/user/month [5]."
+     }
+    ],
+    "claims": [
+     {
+      "entity": "HubSpot Sales Hub",
+      "attribute": "starter price",
+      "value": "$20/seat/month",
+      "asOf": "2026-11-09T05:30:08.000Z",
+      "superseded": false
+     },
+     {
+      "entity": "Pipedrive",
+      "attribute": "essential plan price",
+      "value": "$14/seat/month",
+      "asOf": "2026-11-09T05:30:08.000Z",
+      "superseded": false
+     },
+     {
+      "entity": "Zoho CRM",
+      "attribute": "standard plan price",
+      "value": "$14/user/month",
+      "asOf": "2026-11-09T05:30:08.000Z",
+      "superseded": false
+     },
+     {
+      "entity": "Salesforce",
+      "attribute": "starter suite price",
+      "value": "$25/user/month",
+      "asOf": "2026-11-09T05:30:08.000Z",
+      "superseded": false
+     },
+     {
+      "entity": "Freshsales",
+      "attribute": "growth plan price",
+      "value": "$9/user/month",
+      "asOf": "2026-11-09T05:30:08.000Z",
+      "superseded": false
+     }
+    ],
+    "collections": [
+     {
+      "name": "CRM shortlist",
+      "members": [
+       "HubSpot Sales Hub",
+       "Pipedrive",
+       "Zoho CRM",
+       "Salesforce",
+       "Freshsales"
+      ]
+     }
+    ],
+    "emptyDays": []
+   }
+  ],
+  [
+   476,
+   {
+    "type": "step",
+    "id": "recheck-0",
+    "label": "Checking HubSpot Sales Hub starter price",
+    "status": "running"
+   }
+  ],
+  [
+   478,
+   {
+    "type": "step",
+    "id": "recheck-1",
+    "label": "Checking Pipedrive essential plan price",
+    "status": "running"
+   }
+  ],
+  [
+   478,
+   {
+    "type": "step",
+    "id": "recheck-2",
+    "label": "Checking Zoho CRM standard plan price",
+    "status": "running"
+   }
+  ],
+  [
+   479,
+   {
+    "type": "step",
+    "id": "recheck-3",
+    "label": "Checking Salesforce starter suite price",
+    "status": "running"
+   }
+  ],
+  [
+   480,
+   {
+    "type": "step",
+    "id": "recheck-4",
+    "label": "Checking Freshsales growth plan price",
+    "status": "running"
+   }
+  ],
+  [
+   1076,
+   {
+    "type": "step",
+    "id": "recheck-0",
+    "label": "Checked HubSpot Sales Hub starter price",
+    "status": "done"
+   }
+  ],
+  [
+   1076,
+   {
+    "type": "source",
+    "source": {
+     "n": 1,
+     "title": "Free Tools | HubSpot",
+     "url": "https://www.hubspot.com/pricing/crm"
+    }
+   }
+  ],
+  [
+   1076,
+   {
+    "type": "source",
+    "source": {
+     "n": 2,
+     "title": "HubSpot Sales Hub Pricing 2026: Plans, Costs & Alternatives",
+     "url": "https://getstackprice.com/tools/hubspot-sales-hub/"
+    }
+   }
+  ],
+  [
+   1076,
+   {
+    "type": "source",
+    "source": {
+     "n": 3,
+     "title": "HubSpot Sales Hub: pricing and alternatives | AI Sales Bench",
+     "url": "https://aisalesbench.com/tools/hubspot-sales-hub"
+    }
+   }
+  ],
+  [
+   1086,
+   {
+    "type": "step",
+    "id": "recheck-2",
+    "label": "Checked Zoho CRM standard plan price",
+    "status": "done"
+   }
+  ],
+  [
+   1086,
+   {
+    "type": "source",
+    "source": {
+     "n": 4,
+     "title": "Zoho CRM Pricing 2026: Free to $52, Team Costs and Zia AI",
+     "url": "https://crmsorted.com/pricing/zoho-crm"
+    }
+   }
+  ],
+  [
+   1086,
+   {
+    "type": "source",
+    "source": {
+     "n": 5,
+     "title": "Zoho CRM Pricing 2026",
+     "url": "https://www.g2.com/products/zoho-crm/pricing"
+    }
+   }
+  ],
+  [
+   1086,
+   {
+    "type": "source",
+    "source": {
+     "n": 6,
+     "title": "Zoho CRM Review 2026: Pricing, Pros, Cons and Limits",
+     "url": "https://techpresso.co/reviews/zoho-crm-review",
+     "publishedAt": "2026-10-29T00:00:00.000Z"
+    }
+   }
+  ],
+  [
+   1101,
+   {
+    "type": "step",
+    "id": "recheck-3",
+    "label": "Checked Salesforce starter suite price",
+    "status": "done"
+   }
+  ],
+  [
+   1101,
+   {
+    "type": "source",
+    "source": {
+     "n": 7,
+     "title": "CRM Pricing Plans | Salesforce",
+     "url": "https://www.salesforce.com/crm/pricing/"
+    }
+   }
+  ],
+  [
+   1101,
+   {
+    "type": "source",
+    "source": {
+     "n": 8,
+     "title": "Starter Suite – What’s Included & Pricing | Salesforce",
+     "url": "https://www.salesforce.com/getting-started/intro/"
+    }
+   }
+  ],
+  [
+   1101,
+   {
+    "type": "source",
+    "source": {
+     "n": 9,
+     "title": "Is Salesforce Affordable | Salesforce",
+     "url": "https://www.salesforce.com/pricing/is-salesforce-affordable/",
+     "publishedAt": "2026-07-10T00:00:00.000Z"
+    }
+   }
+  ],
+  [
+   1142,
+   {
+    "type": "step",
+    "id": "recheck-1",
+    "label": "Checked Pipedrive essential plan price",
+    "status": "done"
+   }
+  ],
+  [
+   1142,
+   {
+    "type": "source",
+    "source": {
+     "n": 10,
+     "title": "Plans built to help you close more deals, faster",
+     "url": "https://www.pipedrive.com/en/pricing"
+    }
+   }
+  ],
+  [
+   1143,
+   {
+    "type": "source",
+    "source": {
+     "n": 11,
+     "title": "How much does Pipedrive cost? Pricing plans and what you get | Outsales Blog",
+     "url": "https://outsales.ai/blog/how-much-does-pipedrive-cost",
+     "publishedAt": "2026-03-03T11:01:12.000Z"
+    }
+   }
+  ],
+  [
+   1143,
+   {
+    "type": "source",
+    "source": {
+     "n": 12,
+     "title": "Knowledge Base",
+     "url": "https://support.pipedrive.com/en/article/new-pipedrive-plans"
+    }
+   }
+  ],
+  [
+   1219,
+   {
+    "type": "step",
+    "id": "recheck-4",
+    "label": "Checked Freshsales growth plan price",
+    "status": "done"
+   }
+  ],
+  [
+   1219,
+   {
+    "type": "source",
+    "source": {
+     "n": 13,
+     "title": "Plans forFreshsales",
+     "url": "https://www.freshworks.com/crm/pricing/"
+    }
+   }
+  ],
+  [
+   1219,
+   {
+    "type": "source",
+    "source": {
+     "n": 14,
+     "title": "Freshsales Pricing 2026",
+     "url": "https://www.g2.com/products/freshsales/pricing"
+    }
+   }
+  ],
+  [
+   1219,
+   {
+    "type": "source",
+    "source": {
+     "n": 15,
+     "title": "Freshsales Pricing: Four Plans, One of Them Missing From the Pricing Page",
+     "url": "https://professionalstoolkit.com/articles/freshsales-pricing",
+     "publishedAt": "2026-10-07T15:45:02.000Z"
+    }
+   }
+  ],
+  [
+   1219,
+   {
+    "type": "step",
+    "id": "recheck-compare",
+    "label": "Comparing 5 remembered values with today",
+    "status": "running"
+   }
+  ],
+  [
+   2161,
+   {
+    "type": "step",
+    "id": "recheck-compare",
+    "label": "Compared 5 values",
+    "status": "done"
+   }
+  ],
+  [
+   2161,
+   {
+    "type": "recheck",
+    "rows": [
+     {
+      "entity": "HubSpot Sales Hub",
+      "attribute": "starter price",
+      "then": "$20/seat/month",
+      "thenAsOf": "2026-11-09T05:30:08.000Z",
+      "now": "$20/seat/month",
+      "verdict": "unchanged",
+      "sourceUrl": "https://www.hubspot.com/pricing/crm",
+      "sourceN": 1,
+      "note": "listed under Starter, struck‑through from $20/mo/seat in other views"
+     },
+     {
+      "entity": "Pipedrive",
+      "attribute": "essential plan price",
+      "then": "$14/seat/month",
+      "thenAsOf": "2026-11-09T05:30:08.000Z",
+      "now": "$14/seat/month",
+      "verdict": "unchanged",
+      "sourceUrl": "https://www.pipedrive.com/en/pricing",
+      "sourceN": 10,
+      "note": "per seat, billed annually ($168/year)"
+     },
+     {
+      "entity": "Zoho CRM",
+      "attribute": "standard plan price",
+      "then": "$14/user/month",
+      "thenAsOf": "2026-11-09T05:30:08.000Z",
+      "now": "$14/user/month",
+      "verdict": "unchanged",
+      "sourceUrl": "https://crmsorted.com/pricing/zoho-crm",
+      "sourceN": 4,
+      "note": "Standard plan, billed annually"
+     },
+     {
+      "entity": "Salesforce",
+      "attribute": "starter suite price",
+      "then": "$25/user/month",
+      "thenAsOf": "2026-11-09T05:30:08.000Z",
+      "now": "$25/user/month",
+      "verdict": "unchanged",
+      "sourceUrl": "https://www.salesforce.com/crm/pricing/",
+      "sourceN": 7,
+      "note": "Starter Suite, billed monthly or annually"
+     },
+     {
+      "entity": "Freshsales",
+      "attribute": "growth plan price",
+      "then": "$9/user/month",
+      "thenAsOf": "2026-11-09T05:30:08.000Z",
+      "now": "$9/user/month",
+      "verdict": "unchanged",
+      "sourceUrl": "https://www.freshworks.com/crm/pricing/",
+      "sourceN": 13,
+      "note": "Growth plan, billed annually"
+     }
+    ]
+   }
+  ],
+  [
+   2784,
+   {
+    "type": "step",
+    "id": "search-1",
+    "label": "Searching: HubSpot Sales Hub new features November 2026",
+    "status": "running"
+   }
+  ],
+  [
+   3184,
+   {
+    "type": "step",
+    "id": "search-1",
+    "label": "Searched: HubSpot Sales Hub new features November 2026",
+    "status": "done"
+   }
+  ],
+  [
+   3184,
+   {
+    "type": "source",
+    "source": {
+     "n": 16,
+     "title": "Generative AI CRM: What it is, how it works, and which tool to choose",
+     "url": "https://blog.hubspot.com/sales/generative-ai-crm",
+     "publishedAt": "2026-11-09T13:25:06.000Z"
+    }
+   }
+  ],
+  [
+   3184,
+   {
+    "type": "source",
+    "source": {
+     "n": 17,
+     "title": "CRM modernization: What it is and why it matters",
+     "url": "https://blog.hubspot.com/sales/crm-modernization",
+     "publishedAt": "2026-11-10T14:30:32.000Z"
+    }
+   }
+  ],
+  [
+   3184,
+   {
+    "type": "source",
+    "source": {
+     "n": 18,
+     "title": "Account-based selling: venda para contas estratégicas com a HubSpot",
+     "url": "https://br.hubspot.com/blog/sales/account-based-selling",
+     "publishedAt": "2026-11-09T12:00:01.000Z"
+    }
+   }
+  ],
+  [
+   6358,
+   {
+    "type": "step",
+    "id": "search-2",
+    "label": "Searching: Pipedrive new features November 2026",
+    "status": "running"
+   }
+  ],
+  [
+   6742,
+   {
+    "type": "step",
+    "id": "search-2",
+    "label": "Searched: Pipedrive new features November 2026",
+    "status": "done"
+   }
+  ],
+  [
+   6742,
+   {
+    "type": "source",
+    "source": {
+     "n": 19,
+     "title": "Need suggestion on making Pipedrive marketplace app(integration) for a multi dc application - App Development - Pipedrive Developers' Community",
+     "url": "https://devcommunity.pipedrive.com/t/need-suggestion-on-making-pipedrive-marketplace-app-integration-for-a-multi-dc-application/20873",
+     "publishedAt": "2026-11-09T08:48:49.000Z"
+    }
+   }
+  ],
+  [
+   6742,
+   {
+    "type": "source",
+    "source": {
+     "n": 20,
+     "title": "MCP server: allow redirect URI for our MCP client (Ardion) - API - Pipedrive Developers' Community",
+     "url": "https://devcommunity.pipedrive.com/t/mcp-server-allow-redirect-uri-for-our-mcp-client-ardion/20882",
+     "publishedAt": "2026-11-10T13:25:06.000Z"
+    }
+   }
+  ],
+  [
+   6742,
+   {
+    "type": "source",
+    "source": {
+     "n": 21,
+     "title": "MCP server: allow redirect URIs for our MCP client (Pantares) - API - Pipedrive Developers' Community",
+     "url": "https://devcommunity.pipedrive.com/t/mcp-server-allow-redirect-uris-for-our-mcp-client-pantares/20870",
+     "publishedAt": "2026-11-09T08:48:47.000Z"
+    }
+   }
+  ],
+  [
+   33099,
+   {
+    "type": "text",
+    "delta": "**"
+   }
+  ],
+  [
+   33100,
+   {
+    "type": "text",
+    "delta": "Answer"
+   }
+  ],
+  [
+   33101,
+   {
+    "type": "text",
+    "delta": ":**"
+   }
+  ],
+  [
+   33102,
+   {
+    "type": "text",
+    "delta": " Since"
+   }
+  ],
+  [
+   33104,
+   {
+    "type": "text",
+    "delta": " the"
+   }
+  ],
+  [
+   33106,
+   {
+    "type": "text",
+    "delta": " Monday"
+   }
+  ],
+  [
+   33108,
+   {
+    "type": "text",
+    "delta": " shortlist"
+   }
+  ],
+  [
+   33115,
+   {
+    "type": "text",
+    "delta": " ("
+   }
+  ],
+  [
+   33116,
+   {
+    "type": "text",
+    "delta": "9"
+   }
+  ],
+  [
+   33116,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33120,
+   {
+    "type": "text",
+    "delta": " Nov"
+   }
+  ],
+  [
+   33120,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33135,
+   {
+    "type": "text",
+    "delta": " 202"
+   }
+  ],
+  [
+   33135,
+   {
+    "type": "text",
+    "delta": "6"
+   }
+  ],
+  [
+   33135,
+   {
+    "type": "text",
+    "delta": "),"
+   }
+  ],
+  [
+   33136,
+   {
+    "type": "text",
+    "delta": " none"
+   }
+  ],
+  [
+   33137,
+   {
+    "type": "text",
+    "delta": " of"
+   }
+  ],
+  [
+   33137,
+   {
+    "type": "text",
+    "delta": " the"
+   }
+  ],
+  [
+   33138,
+   {
+    "type": "text",
+    "delta": " five"
+   }
+  ],
+  [
+   33149,
+   {
+    "type": "text",
+    "delta": " CR"
+   }
+  ],
+  [
+   33149,
+   {
+    "type": "text",
+    "delta": "Ms"
+   }
+  ],
+  [
+   33150,
+   {
+    "type": "text",
+    "delta": " have"
+   }
+  ],
+  [
+   33150,
+   {
+    "type": "text",
+    "delta": " changed"
+   }
+  ],
+  [
+   33150,
+   {
+    "type": "text",
+    "delta": " their"
+   }
+  ],
+  [
+   33151,
+   {
+    "type": "text",
+    "delta": " listed"
+   }
+  ],
+  [
+   33151,
+   {
+    "type": "text",
+    "delta": " pricing"
+   }
+  ],
+  [
+   33151,
+   {
+    "type": "text",
+    "delta": ","
+   }
+  ],
+  [
+   33152,
+   {
+    "type": "text",
+    "delta": " and"
+   }
+  ],
+  [
+   33154,
+   {
+    "type": "text",
+    "delta": " each"
+   }
+  ],
+  [
+   33156,
+   {
+    "type": "text",
+    "delta": " has"
+   }
+  ],
+  [
+   33158,
+   {
+    "type": "text",
+    "delta": " announced"
+   }
+  ],
+  [
+   33162,
+   {
+    "type": "text",
+    "delta": " a"
+   }
+  ],
+  [
+   33162,
+   {
+    "type": "text",
+    "delta": " notable"
+   }
+  ],
+  [
+   33165,
+   {
+    "type": "text",
+    "delta": " new"
+   }
+  ],
+  [
+   33168,
+   {
+    "type": "text",
+    "delta": " product"
+   }
+  ],
+  [
+   33168,
+   {
+    "type": "text",
+    "delta": " or"
+   }
+  ],
+  [
+   33170,
+   {
+    "type": "text",
+    "delta": " feature"
+   }
+  ],
+  [
+   33172,
+   {
+    "type": "text",
+    "delta": " rollout"
+   }
+  ],
+  [
+   33174,
+   {
+    "type": "text",
+    "delta": ".\n\n"
+   }
+  ],
+  [
+   33177,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33188,
+   {
+    "type": "text",
+    "delta": " Item"
+   }
+  ],
+  [
+   33188,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33188,
+   {
+    "type": "text",
+    "delta": " Then"
+   }
+  ],
+  [
+   33188,
+   {
+    "type": "text",
+    "delta": " ("
+   }
+  ],
+  [
+   33189,
+   {
+    "type": "text",
+    "delta": "9"
+   }
+  ],
+  [
+   33190,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33191,
+   {
+    "type": "text",
+    "delta": " Nov"
+   }
+  ],
+  [
+   33194,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33197,
+   {
+    "type": "text",
+    "delta": " 202"
+   }
+  ],
+  [
+   33199,
+   {
+    "type": "text",
+    "delta": "6"
+   }
+  ],
+  [
+   33200,
+   {
+    "type": "text",
+    "delta": ")"
+   }
+  ],
+  [
+   33203,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33204,
+   {
+    "type": "text",
+    "delta": " Now"
+   }
+  ],
+  [
+   33206,
+   {
+    "type": "text",
+    "delta": " ("
+   }
+  ],
+  [
+   33208,
+   {
+    "type": "text",
+    "delta": "as"
+   }
+  ],
+  [
+   33211,
+   {
+    "type": "text",
+    "delta": " of"
+   }
+  ],
+  [
+   33214,
+   {
+    "type": "text",
+    "delta": " "
+   }
+  ],
+  [
+   33217,
+   {
+    "type": "text",
+    "delta": "11"
+   }
+  ],
+  [
+   33219,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33220,
+   {
+    "type": "text",
+    "delta": " Nov"
+   }
+  ],
+  [
+   33222,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33224,
+   {
+    "type": "text",
+    "delta": " 202"
+   }
+  ],
+  [
+   33227,
+   {
+    "type": "text",
+    "delta": "6"
+   }
+  ],
+  [
+   33231,
+   {
+    "type": "text",
+    "delta": ")"
+   }
+  ],
+  [
+   33232,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33240,
+   {
+    "type": "text",
+    "delta": " Status"
+   }
+  ],
+  [
+   33240,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33241,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33241,
+   {
+    "type": "text",
+    "delta": "------"
+   }
+  ],
+  [
+   33241,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33244,
+   {
+    "type": "text",
+    "delta": "----------------"
+   }
+  ],
+  [
+   33250,
+   {
+    "type": "text",
+    "delta": "---"
+   }
+  ],
+  [
+   33250,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33250,
+   {
+    "type": "text",
+    "delta": "----------------"
+   }
+  ],
+  [
+   33251,
+   {
+    "type": "text",
+    "delta": "--------"
+   }
+  ],
+  [
+   33254,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33255,
+   {
+    "type": "text",
+    "delta": "--------"
+   }
+  ],
+  [
+   33258,
+   {
+    "type": "text",
+    "delta": "|\n"
+   }
+  ],
+  [
+   33264,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33265,
+   {
+    "type": "text",
+    "delta": " Hub"
+   }
+  ],
+  [
+   33265,
+   {
+    "type": "text",
+    "delta": "Spot"
+   }
+  ],
+  [
+   33266,
+   {
+    "type": "text",
+    "delta": " Sales"
+   }
+  ],
+  [
+   33268,
+   {
+    "type": "text",
+    "delta": " Hub"
+   }
+  ],
+  [
+   33271,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33273,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33275,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33280,
+   {
+    "type": "text",
+    "delta": " Starter"
+   }
+  ],
+  [
+   33281,
+   {
+    "type": "text",
+    "delta": " price"
+   }
+  ],
+  [
+   33281,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33284,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33285,
+   {
+    "type": "text",
+    "delta": "20"
+   }
+  ],
+  [
+   33288,
+   {
+    "type": "text",
+    "delta": "/"
+   }
+  ],
+  [
+   33290,
+   {
+    "type": "text",
+    "delta": "seat"
+   }
+  ],
+  [
+   33292,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33297,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33297,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33298,
+   {
+    "type": "text",
+    "delta": "20"
+   }
+  ],
+  [
+   33301,
+   {
+    "type": "text",
+    "delta": "/"
+   }
+  ],
+  [
+   33304,
+   {
+    "type": "text",
+    "delta": "seat"
+   }
+  ],
+  [
+   33305,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33307,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33309,
+   {
+    "type": "text",
+    "delta": " Un"
+   }
+  ],
+  [
+   33314,
+   {
+    "type": "text",
+    "delta": "changed"
+   }
+  ],
+  [
+   33314,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33315,
+   {
+    "type": "text",
+    "delta": " ["
+   }
+  ],
+  [
+   33317,
+   {
+    "type": "text",
+    "delta": "1"
+   }
+  ],
+  [
+   33319,
+   {
+    "type": "text",
+    "delta": "]"
+   }
+  ],
+  [
+   33321,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33323,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33326,
+   {
+    "type": "text",
+    "delta": " Hub"
+   }
+  ],
+  [
+   33329,
+   {
+    "type": "text",
+    "delta": "Spot"
+   }
+  ],
+  [
+   33329,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33331,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33335,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33336,
+   {
+    "type": "text",
+    "delta": " New"
+   }
+  ],
+  [
+   33338,
+   {
+    "type": "text",
+    "delta": " release"
+   }
+  ],
+  [
+   33340,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33342,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33344,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33347,
+   {
+    "type": "text",
+    "delta": " Gener"
+   }
+  ],
+  [
+   33348,
+   {
+    "type": "text",
+    "delta": "ative"
+   }
+  ],
+  [
+   33350,
+   {
+    "type": "text",
+    "delta": "‑"
+   }
+  ],
+  [
+   33352,
+   {
+    "type": "text",
+    "delta": "AI"
+   }
+  ],
+  [
+   33354,
+   {
+    "type": "text",
+    "delta": "‑"
+   }
+  ],
+  [
+   33356,
+   {
+    "type": "text",
+    "delta": "powered"
+   }
+  ],
+  [
+   33358,
+   {
+    "type": "text",
+    "delta": " CRM"
+   }
+  ],
+  [
+   33364,
+   {
+    "type": "text",
+    "delta": " features"
+   }
+  ],
+  [
+   33365,
+   {
+    "type": "text",
+    "delta": " ("
+   }
+  ],
+  [
+   33365,
+   {
+    "type": "text",
+    "delta": "content"
+   }
+  ],
+  [
+   33367,
+   {
+    "type": "text",
+    "delta": " generation"
+   }
+  ],
+  [
+   33369,
+   {
+    "type": "text",
+    "delta": ","
+   }
+  ],
+  [
+   33372,
+   {
+    "type": "text",
+    "delta": " workflow"
+   }
+  ],
+  [
+   33373,
+   {
+    "type": "text",
+    "delta": " automation"
+   }
+  ],
+  [
+   33375,
+   {
+    "type": "text",
+    "delta": ","
+   }
+  ],
+  [
+   33378,
+   {
+    "type": "text",
+    "delta": " AI"
+   }
+  ],
+  [
+   33381,
+   {
+    "type": "text",
+    "delta": "‑"
+   }
+  ],
+  [
+   33382,
+   {
+    "type": "text",
+    "delta": "summ"
+   }
+  ],
+  [
+   33384,
+   {
+    "type": "text",
+    "delta": "ar"
+   }
+  ],
+  [
+   33386,
+   {
+    "type": "text",
+    "delta": "ized"
+   }
+  ],
+  [
+   33388,
+   {
+    "type": "text",
+    "delta": " interactions"
+   }
+  ],
+  [
+   33389,
+   {
+    "type": "text",
+    "delta": ")"
+   }
+  ],
+  [
+   33392,
+   {
+    "type": "text",
+    "delta": " announced"
+   }
+  ],
+  [
+   33396,
+   {
+    "type": "text",
+    "delta": " "
+   }
+  ],
+  [
+   33396,
+   {
+    "type": "text",
+    "delta": "9"
+   }
+  ],
+  [
+   33398,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33400,
+   {
+    "type": "text",
+    "delta": " Nov"
+   }
+  ],
+  [
+   33402,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33404,
+   {
+    "type": "text",
+    "delta": " 202"
+   }
+  ],
+  [
+   33406,
+   {
+    "type": "text",
+    "delta": "6"
+   }
+  ],
+  [
+   33408,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33417,
+   {
+    "type": "text",
+    "delta": " [16]"
+   }
+  ],
+  [
+   33418,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33419,
+   {
+    "type": "text",
+    "delta": " Changed"
+   }
+  ],
+  [
+   33425,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33425,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33425,
+   {
+    "type": "text",
+    "delta": " P"
+   }
+  ],
+  [
+   33427,
+   {
+    "type": "text",
+    "delta": "iped"
+   }
+  ],
+  [
+   33429,
+   {
+    "type": "text",
+    "delta": "rive"
+   }
+  ],
+  [
+   33431,
+   {
+    "type": "text",
+    "delta": " Essential"
+   }
+  ],
+  [
+   33433,
+   {
+    "type": "text",
+    "delta": " price"
+   }
+  ],
+  [
+   33435,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33437,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33440,
+   {
+    "type": "text",
+    "delta": "14"
+   }
+  ],
+  [
+   33442,
+   {
+    "type": "text",
+    "delta": "/"
+   }
+  ],
+  [
+   33444,
+   {
+    "type": "text",
+    "delta": "seat"
+   }
+  ],
+  [
+   33447,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33447,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33450,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33452,
+   {
+    "type": "text",
+    "delta": "14"
+   }
+  ],
+  [
+   33454,
+   {
+    "type": "text",
+    "delta": "/"
+   }
+  ],
+  [
+   33456,
+   {
+    "type": "text",
+    "delta": "seat"
+   }
+  ],
+  [
+   33458,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33464,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33464,
+   {
+    "type": "text",
+    "delta": " Un"
+   }
+  ],
+  [
+   33465,
+   {
+    "type": "text",
+    "delta": "changed"
+   }
+  ],
+  [
+   33467,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33469,
+   {
+    "type": "text",
+    "delta": " ["
+   }
+  ],
+  [
+   33471,
+   {
+    "type": "text",
+    "delta": "10"
+   }
+  ],
+  [
+   33473,
+   {
+    "type": "text",
+    "delta": "]"
+   }
+  ],
+  [
+   33475,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33478,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33479,
+   {
+    "type": "text",
+    "delta": " P"
+   }
+  ],
+  [
+   33481,
+   {
+    "type": "text",
+    "delta": "iped"
+   }
+  ],
+  [
+   33483,
+   {
+    "type": "text",
+    "delta": "rive"
+   }
+  ],
+  [
+   33485,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33487,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33489,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33491,
+   {
+    "type": "text",
+    "delta": " New"
+   }
+  ],
+  [
+   33494,
+   {
+    "type": "text",
+    "delta": " release"
+   }
+  ],
+  [
+   33498,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33498,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33500,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33502,
+   {
+    "type": "text",
+    "delta": " API"
+   }
+  ],
+  [
+   33504,
+   {
+    "type": "text",
+    "delta": " “"
+   }
+  ],
+  [
+   33506,
+   {
+    "type": "text",
+    "delta": "M"
+   }
+  ],
+  [
+   33508,
+   {
+    "type": "text",
+    "delta": "CP"
+   }
+  ],
+  [
+   33510,
+   {
+    "type": "text",
+    "delta": " server"
+   }
+  ],
+  [
+   33514,
+   {
+    "type": "text",
+    "delta": "”"
+   }
+  ],
+  [
+   33514,
+   {
+    "type": "text",
+    "delta": " updates"
+   }
+  ],
+  [
+   33516,
+   {
+    "type": "text",
+    "delta": " allowing"
+   }
+  ],
+  [
+   33518,
+   {
+    "type": "text",
+    "delta": " third"
+   }
+  ],
+  [
+   33520,
+   {
+    "type": "text",
+    "delta": "‑"
+   }
+  ],
+  [
+   33522,
+   {
+    "type": "text",
+    "delta": "party"
+   }
+  ],
+  [
+   33524,
+   {
+    "type": "text",
+    "delta": " AI"
+   }
+  ],
+  [
+   33527,
+   {
+    "type": "text",
+    "delta": " platforms"
+   }
+  ],
+  [
+   33531,
+   {
+    "type": "text",
+    "delta": " to"
+   }
+  ],
+  [
+   33531,
+   {
+    "type": "text",
+    "delta": " register"
+   }
+  ],
+  [
+   33533,
+   {
+    "type": "text",
+    "delta": " redirect"
+   }
+  ],
+  [
+   33534,
+   {
+    "type": "text",
+    "delta": " UR"
+   }
+  ],
+  [
+   33537,
+   {
+    "type": "text",
+    "delta": "Is"
+   }
+  ],
+  [
+   33540,
+   {
+    "type": "text",
+    "delta": " ("
+   }
+  ],
+  [
+   33541,
+   {
+    "type": "text",
+    "delta": "ann"
+   }
+  ],
+  [
+   33543,
+   {
+    "type": "text",
+    "delta": "ounced"
+   }
+  ],
+  [
+   33546,
+   {
+    "type": "text",
+    "delta": " "
+   }
+  ],
+  [
+   33548,
+   {
+    "type": "text",
+    "delta": "9"
+   }
+  ],
+  [
+   33550,
+   {
+    "type": "text",
+    "delta": "–"
+   }
+  ],
+  [
+   33551,
+   {
+    "type": "text",
+    "delta": "10"
+   }
+  ],
+  [
+   33553,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33555,
+   {
+    "type": "text",
+    "delta": " Nov"
+   }
+  ],
+  [
+   33558,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33561,
+   {
+    "type": "text",
+    "delta": " 202"
+   }
+  ],
+  [
+   33562,
+   {
+    "type": "text",
+    "delta": "6"
+   }
+  ],
+  [
+   33566,
+   {
+    "type": "text",
+    "delta": ")"
+   }
+  ],
+  [
+   33566,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33581,
+   {
+    "type": "text",
+    "delta": " [19]"
+   }
+  ],
+  [
+   33583,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33586,
+   {
+    "type": "text",
+    "delta": " Changed"
+   }
+  ],
+  [
+   33588,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33589,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33592,
+   {
+    "type": "text",
+    "delta": " Zo"
+   }
+  ],
+  [
+   33594,
+   {
+    "type": "text",
+    "delta": "ho"
+   }
+  ],
+  [
+   33597,
+   {
+    "type": "text",
+    "delta": " CRM"
+   }
+  ],
+  [
+   33599,
+   {
+    "type": "text",
+    "delta": " Standard"
+   }
+  ],
+  [
+   33600,
+   {
+    "type": "text",
+    "delta": " price"
+   }
+  ],
+  [
+   33602,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33604,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33606,
+   {
+    "type": "text",
+    "delta": "14"
+   }
+  ],
+  [
+   33608,
+   {
+    "type": "text",
+    "delta": "/user"
+   }
+  ],
+  [
+   33611,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33612,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33615,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33617,
+   {
+    "type": "text",
+    "delta": "14"
+   }
+  ],
+  [
+   33619,
+   {
+    "type": "text",
+    "delta": "/user"
+   }
+  ],
+  [
+   33621,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33624,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33626,
+   {
+    "type": "text",
+    "delta": " Un"
+   }
+  ],
+  [
+   33628,
+   {
+    "type": "text",
+    "delta": "changed"
+   }
+  ],
+  [
+   33630,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33631,
+   {
+    "type": "text",
+    "delta": " ["
+   }
+  ],
+  [
+   33634,
+   {
+    "type": "text",
+    "delta": "4"
+   }
+  ],
+  [
+   33636,
+   {
+    "type": "text",
+    "delta": "]"
+   }
+  ],
+  [
+   33638,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33641,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33643,
+   {
+    "type": "text",
+    "delta": " Zo"
+   }
+  ],
+  [
+   33643,
+   {
+    "type": "text",
+    "delta": "ho"
+   }
+  ],
+  [
+   33649,
+   {
+    "type": "text",
+    "delta": " CRM"
+   }
+  ],
+  [
+   33650,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33650,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33652,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33654,
+   {
+    "type": "text",
+    "delta": " New"
+   }
+  ],
+  [
+   33657,
+   {
+    "type": "text",
+    "delta": " release"
+   }
+  ],
+  [
+   33659,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33661,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33665,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33666,
+   {
+    "type": "text",
+    "delta": " ("
+   }
+  ],
+  [
+   33670,
+   {
+    "type": "text",
+    "delta": "No"
+   }
+  ],
+  [
+   33670,
+   {
+    "type": "text",
+    "delta": " major"
+   }
+  ],
+  [
+   33673,
+   {
+    "type": "text",
+    "delta": " updates"
+   }
+  ],
+  [
+   33675,
+   {
+    "type": "text",
+    "delta": " found"
+   }
+  ],
+  [
+   33675,
+   {
+    "type": "text",
+    "delta": " in"
+   }
+  ],
+  [
+   33678,
+   {
+    "type": "text",
+    "delta": " the"
+   }
+  ],
+  [
+   33681,
+   {
+    "type": "text",
+    "delta": " last"
+   }
+  ],
+  [
+   33682,
+   {
+    "type": "text",
+    "delta": " two"
+   }
+  ],
+  [
+   33684,
+   {
+    "type": "text",
+    "delta": " days"
+   }
+  ],
+  [
+   33686,
+   {
+    "type": "text",
+    "delta": ")"
+   }
+  ],
+  [
+   33688,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33691,
+   {
+    "type": "text",
+    "delta": " Un"
+   }
+  ],
+  [
+   33693,
+   {
+    "type": "text",
+    "delta": "changed"
+   }
+  ],
+  [
+   33697,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33698,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33699,
+   {
+    "type": "text",
+    "delta": " Salesforce"
+   }
+  ],
+  [
+   33700,
+   {
+    "type": "text",
+    "delta": " Starter"
+   }
+  ],
+  [
+   33703,
+   {
+    "type": "text",
+    "delta": " Suite"
+   }
+  ],
+  [
+   33705,
+   {
+    "type": "text",
+    "delta": " price"
+   }
+  ],
+  [
+   33707,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33709,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33714,
+   {
+    "type": "text",
+    "delta": "25"
+   }
+  ],
+  [
+   33714,
+   {
+    "type": "text",
+    "delta": "/user"
+   }
+  ],
+  [
+   33716,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33717,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33719,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33721,
+   {
+    "type": "text",
+    "delta": "25"
+   }
+  ],
+  [
+   33723,
+   {
+    "type": "text",
+    "delta": "/user"
+   }
+  ],
+  [
+   33725,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33728,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33731,
+   {
+    "type": "text",
+    "delta": " Un"
+   }
+  ],
+  [
+   33733,
+   {
+    "type": "text",
+    "delta": "changed"
+   }
+  ],
+  [
+   33733,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33736,
+   {
+    "type": "text",
+    "delta": " ["
+   }
+  ],
+  [
+   33738,
+   {
+    "type": "text",
+    "delta": "7"
+   }
+  ],
+  [
+   33740,
+   {
+    "type": "text",
+    "delta": "]"
+   }
+  ],
+  [
+   33749,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33750,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33751,
+   {
+    "type": "text",
+    "delta": " Salesforce"
+   }
+  ],
+  [
+   33751,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33751,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33753,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33755,
+   {
+    "type": "text",
+    "delta": " New"
+   }
+  ],
+  [
+   33757,
+   {
+    "type": "text",
+    "delta": " release"
+   }
+  ],
+  [
+   33759,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33761,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33764,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33765,
+   {
+    "type": "text",
+    "delta": " ("
+   }
+  ],
+  [
+   33767,
+   {
+    "type": "text",
+    "delta": "No"
+   }
+  ],
+  [
+   33770,
+   {
+    "type": "text",
+    "delta": " major"
+   }
+  ],
+  [
+   33772,
+   {
+    "type": "text",
+    "delta": " updates"
+   }
+  ],
+  [
+   33774,
+   {
+    "type": "text",
+    "delta": " found"
+   }
+  ],
+  [
+   33776,
+   {
+    "type": "text",
+    "delta": " in"
+   }
+  ],
+  [
+   33780,
+   {
+    "type": "text",
+    "delta": " the"
+   }
+  ],
+  [
+   33780,
+   {
+    "type": "text",
+    "delta": " last"
+   }
+  ],
+  [
+   33782,
+   {
+    "type": "text",
+    "delta": " two"
+   }
+  ],
+  [
+   33784,
+   {
+    "type": "text",
+    "delta": " days"
+   }
+  ],
+  [
+   33786,
+   {
+    "type": "text",
+    "delta": ")"
+   }
+  ],
+  [
+   33789,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33790,
+   {
+    "type": "text",
+    "delta": " Un"
+   }
+  ],
+  [
+   33792,
+   {
+    "type": "text",
+    "delta": "changed"
+   }
+  ],
+  [
+   33798,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33798,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33800,
+   {
+    "type": "text",
+    "delta": " Fresh"
+   }
+  ],
+  [
+   33803,
+   {
+    "type": "text",
+    "delta": "sales"
+   }
+  ],
+  [
+   33803,
+   {
+    "type": "text",
+    "delta": " Growth"
+   }
+  ],
+  [
+   33809,
+   {
+    "type": "text",
+    "delta": " price"
+   }
+  ],
+  [
+   33810,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33810,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33816,
+   {
+    "type": "text",
+    "delta": "9"
+   }
+  ],
+  [
+   33816,
+   {
+    "type": "text",
+    "delta": "/user"
+   }
+  ],
+  [
+   33816,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33818,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33820,
+   {
+    "type": "text",
+    "delta": " $"
+   }
+  ],
+  [
+   33822,
+   {
+    "type": "text",
+    "delta": "9"
+   }
+  ],
+  [
+   33824,
+   {
+    "type": "text",
+    "delta": "/user"
+   }
+  ],
+  [
+   33826,
+   {
+    "type": "text",
+    "delta": "/month"
+   }
+  ],
+  [
+   33829,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33830,
+   {
+    "type": "text",
+    "delta": " Un"
+   }
+  ],
+  [
+   33833,
+   {
+    "type": "text",
+    "delta": "changed"
+   }
+  ],
+  [
+   33835,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33836,
+   {
+    "type": "text",
+    "delta": " ["
+   }
+  ],
+  [
+   33838,
+   {
+    "type": "text",
+    "delta": "13"
+   }
+  ],
+  [
+   33841,
+   {
+    "type": "text",
+    "delta": "]"
+   }
+  ],
+  [
+   33843,
+   {
+    "type": "text",
+    "delta": " |\n"
+   }
+  ],
+  [
+   33851,
+   {
+    "type": "text",
+    "delta": "|"
+   }
+  ],
+  [
+   33851,
+   {
+    "type": "text",
+    "delta": " Fresh"
+   }
+  ],
+  [
+   33851,
+   {
+    "type": "text",
+    "delta": "sales"
+   }
+  ],
+  [
+   33851,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33854,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33855,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   33857,
+   {
+    "type": "text",
+    "delta": " New"
+   }
+  ],
+  [
+   33859,
+   {
+    "type": "text",
+    "delta": " release"
+   }
+  ],
+  [
+   33863,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33864,
+   {
+    "type": "text",
+    "delta": " –"
+   }
+  ],
+  [
+   33866,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33868,
+   {
+    "type": "text",
+    "delta": " ("
+   }
+  ],
+  [
+   33871,
+   {
+    "type": "text",
+    "delta": "No"
+   }
+  ],
+  [
+   33872,
+   {
+    "type": "text",
+    "delta": " major"
+   }
+  ],
+  [
+   33875,
+   {
+    "type": "text",
+    "delta": " updates"
+   }
+  ],
+  [
+   33876,
+   {
+    "type": "text",
+    "delta": " found"
+   }
+  ],
+  [
+   33879,
+   {
+    "type": "text",
+    "delta": " in"
+   }
+  ],
+  [
+   33881,
+   {
+    "type": "text",
+    "delta": " the"
+   }
+  ],
+  [
+   33882,
+   {
+    "type": "text",
+    "delta": " last"
+   }
+  ],
+  [
+   33885,
+   {
+    "type": "text",
+    "delta": " two"
+   }
+  ],
+  [
+   33886,
+   {
+    "type": "text",
+    "delta": " days"
+   }
+  ],
+  [
+   33889,
+   {
+    "type": "text",
+    "delta": ")"
+   }
+  ],
+  [
+   33891,
+   {
+    "type": "text",
+    "delta": " |"
+   }
+  ],
+  [
+   33893,
+   {
+    "type": "text",
+    "delta": " Un"
+   }
+  ],
+  [
+   33898,
+   {
+    "type": "text",
+    "delta": "changed"
+   }
+  ],
+  [
+   33899,
+   {
+    "type": "text",
+    "delta": " |\n\n"
+   }
+  ],
+  [
+   33900,
+   {
+    "type": "text",
+    "delta": "**"
+   }
+  ],
+  [
+   33902,
+   {
+    "type": "text",
+    "delta": "Take"
+   }
+  ],
+  [
+   33904,
+   {
+    "type": "text",
+    "delta": "away"
+   }
+  ],
+  [
+   33906,
+   {
+    "type": "text",
+    "delta": ":**"
+   }
+  ],
+  [
+   33907,
+   {
+    "type": "text",
+    "delta": " Pricing"
+   }
+  ],
+  [
+   33910,
+   {
+    "type": "text",
+    "delta": " for"
+   }
+  ],
+  [
+   33912,
+   {
+    "type": "text",
+    "delta": " all"
+   }
+  ],
+  [
+   33914,
+   {
+    "type": "text",
+    "delta": " five"
+   }
+  ],
+  [
+   33916,
+   {
+    "type": "text",
+    "delta": " shortlisted"
+   }
+  ],
+  [
+   33918,
+   {
+    "type": "text",
+    "delta": " CR"
+   }
+  ],
+  [
+   33920,
+   {
+    "type": "text",
+    "delta": "Ms"
+   }
+  ],
+  [
+   33922,
+   {
+    "type": "text",
+    "delta": " remains"
+   }
+  ],
+  [
+   33924,
+   {
+    "type": "text",
+    "delta": " the"
+   }
+  ],
+  [
+   33926,
+   {
+    "type": "text",
+    "delta": " same"
+   }
+  ],
+  [
+   33930,
+   {
+    "type": "text",
+    "delta": ","
+   }
+  ],
+  [
+   33931,
+   {
+    "type": "text",
+    "delta": " but"
+   }
+  ],
+  [
+   33933,
+   {
+    "type": "text",
+    "delta": " Hub"
+   }
+  ],
+  [
+   33934,
+   {
+    "type": "text",
+    "delta": "Spot"
+   }
+  ],
+  [
+   33936,
+   {
+    "type": "text",
+    "delta": " and"
+   }
+  ],
+  [
+   33938,
+   {
+    "type": "text",
+    "delta": " P"
+   }
+  ],
+  [
+   33942,
+   {
+    "type": "text",
+    "delta": "iped"
+   }
+  ],
+  [
+   33943,
+   {
+    "type": "text",
+    "delta": "rive"
+   }
+  ],
+  [
+   33948,
+   {
+    "type": "text",
+    "delta": " have"
+   }
+  ],
+  [
+   33948,
+   {
+    "type": "text",
+    "delta": " each"
+   }
+  ],
+  [
+   33953,
+   {
+    "type": "text",
+    "delta": " introduced"
+   }
+  ],
+  [
+   33953,
+   {
+    "type": "text",
+    "delta": " a"
+   }
+  ],
+  [
+   33954,
+   {
+    "type": "text",
+    "delta": " significant"
+   }
+  ],
+  [
+   33957,
+   {
+    "type": "text",
+    "delta": " new"
+   }
+  ],
+  [
+   33959,
+   {
+    "type": "text",
+    "delta": " AI"
+   }
+  ],
+  [
+   33959,
+   {
+    "type": "text",
+    "delta": "‑"
+   }
+  ],
+  [
+   33963,
+   {
+    "type": "text",
+    "delta": "related"
+   }
+  ],
+  [
+   33963,
+   {
+    "type": "text",
+    "delta": " capability"
+   }
+  ],
+  [
+   33965,
+   {
+    "type": "text",
+    "delta": " since"
+   }
+  ],
+  [
+   33967,
+   {
+    "type": "text",
+    "delta": " Monday"
+   }
+  ],
+  [
+   33970,
+   {
+    "type": "text",
+    "delta": "."
+   }
+  ],
+  [
+   33972,
+   {
+    "type": "text",
+    "delta": " Zo"
+   }
+  ],
+  [
+   33975,
+   {
+    "type": "text",
+    "delta": "ho"
+   }
+  ],
+  [
+   33978,
+   {
+    "type": "text",
+    "delta": ","
+   }
+  ],
+  [
+   33980,
+   {
+    "type": "text",
+    "delta": " Salesforce"
+   }
+  ],
+  [
+   33982,
+   {
+    "type": "text",
+    "delta": ","
+   }
+  ],
+  [
+   33983,
+   {
+    "type": "text",
+    "delta": " and"
+   }
+  ],
+  [
+   33985,
+   {
+    "type": "text",
+    "delta": " Fresh"
+   }
+  ],
+  [
+   33987,
+   {
+    "type": "text",
+    "delta": "sales"
+   }
+  ],
+  [
+   33989,
+   {
+    "type": "text",
+    "delta": " show"
+   }
+  ],
+  [
+   33991,
+   {
+    "type": "text",
+    "delta": " no"
+   }
+  ],
+  [
+   33993,
+   {
+    "type": "text",
+    "delta": " major"
+   }
+  ],
+  [
+   33996,
+   {
+    "type": "text",
+    "delta": " new"
+   }
+  ],
+  [
+   33998,
+   {
+    "type": "text",
+    "delta": " shipments"
+   }
+  ],
+  [
+   34000,
+   {
+    "type": "text",
+    "delta": " in"
+   }
+  ],
+  [
+   34002,
+   {
+    "type": "text",
+    "delta": " the"
+   }
+  ],
+  [
+   34004,
+   {
+    "type": "text",
+    "delta": " same"
+   }
+  ],
+  [
+   34006,
+   {
+    "type": "text",
+    "delta": " window"
+   }
+  ],
+  [
+   34008,
+   {
+    "type": "text",
+    "delta": "."
+   }
+  ],
+  [
+   34016,
+   {
+    "type": "done",
+    "tier": "recheck",
+    "timings": {
+     "plan": 463,
+     "recall": 475,
+     "recheck": 2160,
+     "answer": 34013
+    },
+    "turnId": 8
+   }
+  ]
+ ]
+}

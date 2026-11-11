@@ -1,0 +1,47 @@
+{
+  "name": "trueyet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A chat agent with web search and time-aware memory.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,magenta \"tsx watch --env-file-if-exists=.env src/server/index.ts\" \"vite\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "seed": "tsx --env-file-if-exists=.env eval/seed.ts",
+    "eval": "tsx --env-file-if-exists=.env eval/run.ts",
+    "cli": "tsx --env-file-if-exists=.env src/cli.ts",
+    "record-demo": "tsx --env-file-if-exists=.env eval/record-demo.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.102",
+    "@ai-sdk/google": "^4.0.117",
+    "@ai-sdk/groq": "^4.0.81",
+    "@hono/node-server": "^2.1.6",
+    "@mozilla/readability": "^0.6.0",
+    "ai": "^7.0.169",
+    "chrono-node": "^2.10.3",
+    "dompurify": "^3.4.17",
+    "hono": "^4.13.17",
+    "linkedom": "^0.18.15",
+    "marked": "^18.2.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "concurrently": "^10.0.7",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}

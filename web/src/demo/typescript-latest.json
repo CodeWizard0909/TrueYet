@@ -1,0 +1,299 @@
+{
+ "id": "typescript-latest",
+ "question": "What is the latest stable version of TypeScript?",
+ "recordedAt": "2026-11-11T10:31:51.170Z",
+ "provider": "groq",
+ "models": {
+  "fast": "openai/gpt-oss-20b",
+  "answer": "openai/gpt-oss-120b"
+ },
+ "events": [
+  [
+   42,
+   {
+    "type": "step",
+    "id": "plan",
+    "label": "Understanding the question",
+    "status": "running"
+   }
+  ],
+  [
+   67,
+   {
+    "type": "step",
+    "id": "search-early",
+    "label": "Searching: What is the latest stable version of TypeScript?",
+    "status": "running"
+   }
+  ],
+  [
+   471,
+   {
+    "type": "step",
+    "id": "search-early",
+    "label": "Searched: What is the latest stable version of TypeScript?",
+    "status": "done"
+   }
+  ],
+  [
+   628,
+   {
+    "type": "step",
+    "id": "plan",
+    "label": "Plan: lookup",
+    "status": "done"
+   }
+  ],
+  [
+   628,
+   {
+    "type": "plan",
+    "tier": "lookup",
+    "topics": []
+   }
+  ],
+  [
+   635,
+   {
+    "type": "source",
+    "source": {
+     "n": 1,
+     "title": "typescript - npm",
+     "url": "https://www.npmjs.com/package/typescript?activeTab=versions"
+    }
+   }
+  ],
+  [
+   635,
+   {
+    "type": "source",
+    "source": {
+     "n": 2,
+     "title": "Releases · microsoft/TypeScript · GitHub",
+     "url": "https://github.com/microsoft/TypeScript/releases/"
+    }
+   }
+  ],
+  [
+   635,
+   {
+    "type": "source",
+    "source": {
+     "n": 3,
+     "title": "TypeScript - Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/TypeScript",
+     "publishedAt": "2026-10-01T23:40:57.000Z"
+    }
+   }
+  ],
+  [
+   1305,
+   {
+    "type": "text",
+    "delta": "The"
+   }
+  ],
+  [
+   1306,
+   {
+    "type": "text",
+    "delta": " latest"
+   }
+  ],
+  [
+   1306,
+   {
+    "type": "text",
+    "delta": " stable"
+   }
+  ],
+  [
+   1308,
+   {
+    "type": "text",
+    "delta": " version"
+   }
+  ],
+  [
+   1310,
+   {
+    "type": "text",
+    "delta": " of"
+   }
+  ],
+  [
+   1312,
+   {
+    "type": "text",
+    "delta": " Type"
+   }
+  ],
+  [
+   1315,
+   {
+    "type": "text",
+    "delta": "Script"
+   }
+  ],
+  [
+   1317,
+   {
+    "type": "text",
+    "delta": " is"
+   }
+  ],
+  [
+   1319,
+   {
+    "type": "text",
+    "delta": " **"
+   }
+  ],
+  [
+   1321,
+   {
+    "type": "text",
+    "delta": "7"
+   }
+  ],
+  [
+   1325,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   1325,
+   {
+    "type": "text",
+    "delta": "."
+   }
+  ],
+  [
+   1327,
+   {
+    "type": "text",
+    "delta": "0"
+   }
+  ],
+  [
+   1329,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   1331,
+   {
+    "type": "text",
+    "delta": "."
+   }
+  ],
+  [
+   1334,
+   {
+    "type": "text",
+    "delta": "2"
+   }
+  ],
+  [
+   1335,
+   {
+    "type": "text",
+    "delta": "**,"
+   }
+  ],
+  [
+   1338,
+   {
+    "type": "text",
+    "delta": " released"
+   }
+  ],
+  [
+   1346,
+   {
+    "type": "text",
+    "delta": " on"
+   }
+  ],
+  [
+   1347,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   1347,
+   {
+    "type": "text",
+    "delta": " 8"
+   }
+  ],
+  [
+   1347,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   1347,
+   {
+    "type": "text",
+    "delta": " July"
+   }
+  ],
+  [
+   1349,
+   {
+    "type": "text",
+    "delta": ""
+   }
+  ],
+  [
+   1354,
+   {
+    "type": "text",
+    "delta": " 202"
+   }
+  ],
+  [
+   1354,
+   {
+    "type": "text",
+    "delta": "6"
+   }
+  ],
+  [
+   1360,
+   {
+    "type": "text",
+    "delta": "[3]"
+   }
+  ],
+  [
+   1362,
+   {
+    "type": "text",
+    "delta": "."
+   }
+  ],
+  [
+   1373,
+   {
+    "type": "done",
+    "tier": "lookup",
+    "timings": {
+     "plan": 627,
+     "recall": 634,
+     "answer": 1370
+    },
+    "turnId": 8
+   }
+  ]
+ ]
+}
