@@ -9,7 +9,7 @@ message ─► resolve dates (chrono, user's timezone, injectable "now")
         ─► plan (fast model, JSON) ‖ recall (SQLite) ‖ speculative search
         ─► tier: chat · recall · lookup · research · recheck
         ─► recheck old claims in parallel (recheck tier only)
-        ─► answer (strong model, one tool: web_search, ≤3 rounds) ─► stream to UI
+        ─► answer (strong model, one tool: web_search, a fixed search allowance) ─► stream to UI
         ─► save turns ─► extract claims + collections in the background
 ```
 
@@ -20,6 +20,8 @@ message ─► resolve dates (chrono, user's timezone, injectable "now")
 - **Provider-agnostic.** Claude (Haiku + Sonnet), Gemini (Flash-Lite + 3.5 Flash) or Groq (gpt-oss 20b + 120b), picked from whichever key is set; the agent code never names a provider.
 - **Web text is data, not instructions.** Memory, recheck rows and search excerpts reach the answer model inside tags in the user turn, never in the system prompt, so a web page can't give the agent orders.
 - **Fast by default.** Planning, recall and a speculative search run at once; chat and recall skip search; Exa is the default provider (sub-second, most accurate in 2026 benchmarks) with Brave as a fallback; results are cached for an hour; the stable system prompt is cached by the provider; memory writes happen after the answer has streamed.
+- **It always answers.** Every model and search call has a timeout. If the planner fails, rules pick the tier. If the model spends its whole search allowance (6 searches, 2 on free tiers) without writing, a final pass answers from what was gathered.
+- **The work is visible.** The server streams each step as an event; the UI's four dogs (the Savvy Paws) show who is planning, searching, remembering and rechecking, from those same events.
 - **Trustworthy output.** Every web fact is cited `[n]`, prices come from fetched page text rather than snippets, dates are explicit ("as of 3 Nov 2026"), and the UI shows exactly what was remembered.
 
 ## Why this shape
@@ -42,7 +44,7 @@ All three example questions are about **time**: what was said on a day, and whet
 
 78 unit and integration tests (`npm test`) cover date resolution across every weekday and timezone edge, recall, claim superseding, verdicts, citation clean-up, search failover and caching, the full pipeline with mock models, a model that never stops searching, and the SSE server. `npm run eval` runs the challenge's scenarios against real models and the live web, and reports first-token latency (p50/p95). `NOW` / `X-Now` fix the clock, so a week of history can be tested in a minute.
 
-Latest run (Groq free tier, gpt-oss-20b / 120b, live Exa search): **7/7 passed**, first token p50 **1.8s**. Recall answers in under 1.3s, rechecks in about 2s. The heaviest case (rechecking a 5-tool shortlist and searching for launches) took 38s, almost all of it waiting on the free plan's 8K tokens-per-minute cap, which is why the agent has a tighter context budget on free tiers.
+Latest run (11 Nov 2026, Groq free tier, gpt-oss-20b / 120b, live Exa search): **7/7 passed**, first token p50 **2.4s**. Recall answers in under 1.3s, single rechecks in 3 to 4.5s. The heaviest case (rechecking a 5-tool shortlist) took 12.8s; an earlier run took 38s, almost all of it waiting on the free plan's 8K tokens-per-minute cap, which is why the agent has a tighter context budget on free tiers.
 
 ## With another week
 
@@ -50,4 +52,4 @@ Latest run (Groq free tier, gpt-oss-20b / 120b, live Exa search): **7/7 passed**
 2. **Local embeddings** for fuzzy recall ("that database thing") without sending memory anywhere.
 3. **Source quality scoring**, preferring vendor pages and penalising SEO aggregators automatically.
 4. **A bigger eval set** with a model-graded rubric, run on every change, plus tuning the claim extractor against it.
-5. **Expose the claim store over MCP**, so other assistants can ask "what did we decide about X, and is it still true?"
+5. **Stricter memory and verdicts.** Check each extracted value against its source excerpt before storing it, recheck against the claim's original source page first, and compare typed values (amount, unit, period) so "$19/month" and "$19/month, billed yearly" don't read as a change.
